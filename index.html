@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora ISAVU 2026 V.2.2</title>
+    <title>Calculadora ISAVU 2026 V.2.3</title>
     <style>
         * {
             margin: 0;
@@ -1452,7 +1452,7 @@ input, select { font-size: 16px !important; }
                 <p>Impuesto Sobre Adquisición de Vehículos Usados - Nayarit</p>
             </div>
             <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 5px;">
-                <span class="version-badge">V.2.2</span>
+                <span class="version-badge">V.2.3</span>
                 <span class="inpc-update-badge" id="inpcUpdateBadge">
                     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="vertical-align: middle; margin-right: 4px;">
                         <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
@@ -1478,21 +1478,9 @@ input, select { font-size: 16px !important; }
             <div class="column form-column">
                 <!-- Card: Datos del Vehículo -->
                 <div class="card">
-                    <div class="card-header" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;">
-                        <div>
-                            <h2 class="card-title">Datos del Vehículo</h2>
-                            <p class="card-subtitle">Complete la información solicitada</p>
-                        </div>
-                        <div id="themeSwitcher" style="display:flex;align-items:center;gap:8px;">
-                            <span style="font-size:0.6rem;color:rgba(160,210,235,0.4);letter-spacing:0.06em;text-transform:uppercase;">Tema</span>
-                            <button onclick="aplicarTema('obsidian')" id="dot-obsidian" title="Obsidian" style="width:13px;height:13px;border-radius:50%;background:linear-gradient(135deg,#1a1a2e,#4a90d9);border:2px solid transparent;cursor:pointer;padding:0;transition:transform .2s,border-color .2s;"></button>
-                            <button onclick="aplicarTema('grafito')" id="dot-grafito" title="Grafito Ejecutivo" style="width:13px;height:13px;border-radius:50%;background:linear-gradient(135deg,#1c1c1c,#8b9ea8);border:2px solid transparent;cursor:pointer;padding:0;transition:transform .2s,border-color .2s;"></button>
-                            <button onclick="aplicarTema('executivo')" id="dot-executivo" title="Ejecutivo Blanco" style="width:13px;height:13px;border-radius:50%;background:linear-gradient(135deg,#ffffff,#c8d6e5);border:2px solid #bbb;cursor:pointer;padding:0;transition:transform .2s,border-color .2s;"></button>
-                            <button onclick="aplicarTema('bordo')" id="dot-bordo" title="Burdeos Imperial" style="width:13px;height:13px;border-radius:50%;background:linear-gradient(135deg,#2c0a14,#7a1530);border:2px solid transparent;cursor:pointer;padding:0;transition:transform .2s,border-color .2s;"></button>
-                            <button onclick="aplicarTema('zafiro')" id="dot-zafiro" title="Zafiro Corporativo" style="width:13px;height:13px;border-radius:50%;background:linear-gradient(135deg,#0a1628,#1a3f6f);border:2px solid transparent;cursor:pointer;padding:0;transition:transform .2s,border-color .2s;"></button>
-                            <button onclick="aplicarTema('retro80')" id="dot-retro80" title="Retro 80s" style="width:13px;height:13px;border-radius:50%;background:radial-gradient(circle,#00FF41,#003B00);border:2px solid transparent;cursor:pointer;padding:0;transition:transform .2s,border-color .2s;"></button>
-                            <button onclick="aplicarTema('bronce')" id="dot-bronce" title="Bronce Ejecutivo" style="width:13px;height:13px;border-radius:50%;background:linear-gradient(135deg,#1a1200,#7a5c00);border:2px solid transparent;cursor:pointer;padding:0;transition:transform .2s,border-color .2s;"></button>
-                        </div>
+                    <div class="card-header">
+                        <h2 class="card-title">Datos del Vehículo</h2>
+                        <p class="card-subtitle">Complete la información solicitada</p>
                     </div>
 
                     <div id="alertContainer"></div>
@@ -2196,7 +2184,7 @@ input, select { font-size: 16px !important; }
                             <strong>Fecha de cálculo:</strong> <span id="currentDate"></span>
                         </p>
                         <p>
-                            Esta calculadora aplica la metodología del ejercicio fiscal 2026 para el cálculo del ISAVU (V.2.2).
+                            Esta calculadora aplica la metodología del ejercicio fiscal 2026 para el cálculo del ISAVU (V.2.3).
                         </p>
                     </div>
                 </div>
@@ -2276,7 +2264,7 @@ input, select { font-size: 16px !important; }
             </div>
             <div style="background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.3); border-radius:8px; padding:5px 12px; text-align:center;">
                 <div style="color:rgba(255,255,255,0.65); font-size:0.55rem; text-transform:uppercase; letter-spacing:1px; display:block;">Versión</div>
-                <div style="color:white; font-size:0.85rem; font-weight:700; display:block;">V.2.2</div>
+                <div style="color:white; font-size:0.85rem; font-weight:700; display:block;">V.2.3</div>
             </div>
         </div>
 
@@ -2367,7 +2355,7 @@ input, select { font-size: 16px !important; }
             <div style="border-top:1.5px solid #e0e4f0; padding-top:7px; display:flex; justify-content:space-between; align-items:center;">
                 <div style="color:#6b7280; font-size:0.6rem; line-height:1.5;">
                     <strong>Fecha de cálculo:</strong> <span id="imgFecha"></span><br>
-                    Calculadora ISAVU 2026 V.2.2
+                    Calculadora ISAVU 2026 V.2.3
                 </div>
                 <div style="color:#2d2d8f; font-size:1.2rem; font-weight:800; opacity:0.2;">ISAVU</div>
             </div>
@@ -2457,8 +2445,9 @@ input, select { font-size: 16px !important; }
         const INEGI_TOKEN  = '05971107-f33d-c9c4-8057-652fc07cb7af';
         const INEGI_SERIE  = '628194';
         const INEGI_URL    = `https://www.inegi.org.mx/app/api/indicadores/desarrolladores/jsonxml/INDICATOR/${INEGI_SERIE}/es/00000/false/BISE/2.0/${INEGI_TOKEN}?type=json`;
-        // Proxy CORS como alternativa si hay bloqueo cross-origin
+        // Proxies CORS como alternativa si hay bloqueo cross-origin
         const PROXY_URL    = `https://corsproxy.io/?${encodeURIComponent(INEGI_URL)}`;
+        const PROXY_URL2   = `https://api.allorigins.win/get?url=${encodeURIComponent(INEGI_URL)}`;
 
         // Tabla base (respaldo offline — datos históricos verificados)
         let INPC_DATA = {
@@ -2473,7 +2462,7 @@ input, select { font-size: 16px !important; }
             2023: [127.336,     128.046,     128.389,     128.363,     128.084,     128.214,     128.832,     129.545,     130.12,      130.609,     131.445,     131.445    ],
             2024: [133.555,     133.681,     134.065,     134.336,     134.087,     134.594,     136.003,     136.013,     136.08,      136.828,     137.424,     137.949    ],
             2025: [138.343,     138.726,     139.161,     139.62,      140.012,     140.405,     140.78,      140.867,     141.197,     141.708,     142.645,     143.042    ],
-            2026: [143.588,     null,        null,        null,        null,        null,        null,        null,        null,        null,        null,        null       ]
+            2026: [143.588,     144.307,     null,        null,        null,        null,        null,        null,        null,        null,        null,        null       ]
         };
 
         // Estado de la fuente de datos
@@ -2566,13 +2555,18 @@ input, select { font-size: 16px !important; }
             return '-';
         }
 
-        // Intentar cargar INPC desde la API (directo → proxy → local)
+        // Intentar cargar INPC desde la API (directo → proxy → proxy2 → local)
         // Usa XMLHttpRequest para máxima compatibilidad con file:// y extensiones
         function cargarINPCDesdeAPI() {
             // Actualizar inmediatamente con datos locales
             _actualizarBadgeINPC('local', _ultimoPeriodoINPC());
             
-            const intentos = [INEGI_URL, PROXY_URL];
+            // PROXY_URL2 (allorigins) devuelve {contents: "<json string>"}
+            const intentos = [
+                { url: INEGI_URL,  wrapper: false },
+                { url: PROXY_URL,  wrapper: false },
+                { url: PROXY_URL2, wrapper: true  }
+            ];
             let idx = 0;
 
             function intentar() {
@@ -2583,25 +2577,29 @@ input, select { font-size: 16px !important; }
                     return;
                 }
 
-                const url = intentos[idx++];
+                const { url, wrapper } = intentos[idx++];
                 const xhr = new XMLHttpRequest();
                 xhr.open('GET', url, true);
-                xhr.timeout = 8000;
+                xhr.timeout = 10000;
                 xhr.setRequestHeader('Accept', 'application/json');
 
                 xhr.onload = function() {
                     if (xhr.status >= 200 && xhr.status < 300) {
                         try {
-                            const json = JSON.parse(xhr.responseText);
-                            const ok = _parsearRespuestaINEGI(json);
+                            let parsed = JSON.parse(xhr.responseText);
+                            // allorigins devuelve { contents: "..." }
+                            if (wrapper && parsed.contents) {
+                                parsed = JSON.parse(parsed.contents);
+                            }
+                            const ok = _parsearRespuestaINEGI(parsed);
                             if (ok) {
                                 inpcFuente = 'api';
                                 _actualizarBadgeINPC('api', _ultimoPeriodoINPC());
                                 return;
                             }
-                        } catch(e) { /* JSON inválido */ }
+                        } catch(e) { /* JSON inválido, intentar siguiente */ }
                     }
-                    intentar(); // siguiente URL
+                    intentar();
                 };
 
                 xhr.onerror   = function() { intentar(); };
@@ -3185,256 +3183,6 @@ input, select { font-size: 16px !important; }
     <span id="tasaSmall">-</span>
     <span id="metodoAplicadoSmall">-</span>
 </div>
-
-<!-- Selector de temas -->
-
-<style>
-#themeSwitcher button:hover { transform: scale(1.5); }
-#themeSwitcher button.activo { border-color: rgba(255,255,255,0.7) !important; transform: scale(1.4); }
-</style>
-
-<script>
-const TEMAS = {
-    // ── SERIO FONDO BLANCO ──────────────────────────────────────────
-    executivo: {
-        '--nayarit-vino':        '#1a3a5c',
-        '--nayarit-vino-light':  '#2a5080',
-        '--nayarit-verde':       '#1e4d72',
-        '--nayarit-verde-light': '#3a6e9e',
-        '--nayarit-rojo':        '#c0392b',
-        '--nayarit-amarillo':    '#1a3a5c',
-        '--bg-primary':          '#f5f7fa',
-        '--bg-secondary':        '#eaecf0',
-        '--bg-card':             '#ffffff',
-        '--border-color':        '#c8d6e5',
-        '--text-primary':        '#1a1a2e',
-        '--text-secondary':      '#4a6080',
-        '--shadow':              'rgba(26,58,92,0.18)',
-        '--glow':                'rgba(26,58,92,0.10)',
-        '--gradient-primary':    'linear-gradient(135deg,#1a3a5c 0%,#2a5080 50%,#1e4d72 100%)',
-        '--gradient-secondary':  'linear-gradient(135deg,#1e4d72 0%,#2a5080 50%,#1a3a5c 100%)',
-        '--gradient-accent':     'linear-gradient(90deg,#1a3a5c,#2a5080,#3a6e9e,#2a5080,#1a3a5c)',
-        '--gradient-holographic':'linear-gradient(45deg,#1a3a5c 0%,#2a5080 40%,#3a6e9e 70%,#1a3a5c 100%)',
-        bodyBg: 'linear-gradient(160deg,#f5f7fa 0%,#eaecf0 100%)'
-    },
-    // ── SERIOS OSCUROS ──────────────────────────────────────────────
-    obsidian: {
-        '--nayarit-vino':        '#4a90d9',
-        '--nayarit-vino-light':  '#6aaee8',
-        '--nayarit-verde':       '#2c5f8a',
-        '--nayarit-verde-light': '#5b8fbf',
-        '--nayarit-rojo':        '#5c9fd4',
-        '--nayarit-amarillo':    '#3a7abf',
-        '--bg-primary':          '#0b0d12',
-        '--bg-secondary':        '#131720',
-        '--bg-card':             '#0f1219',
-        '--border-color':        '#1e2840',
-        '--text-primary':        '#d6e4f0',
-        '--text-secondary':      '#7a9ab8',
-        '--shadow':              'rgba(74,144,217,0.35)',
-        '--glow':                'rgba(74,144,217,0.25)',
-        '--gradient-primary':    'linear-gradient(135deg,#1a2744 0%,#1e3158 40%,#243d6e 100%)',
-        '--gradient-secondary':  'linear-gradient(135deg,#0f1a2e 0%,#1a2a4a 50%,#253c6a 100%)',
-        '--gradient-accent':     'linear-gradient(90deg,#1e3158,#2a4170,#3a5a94,#2a4170,#1e3158)',
-        '--gradient-holographic':'linear-gradient(45deg,#1a2744 0%,#2a4170 40%,#3a5a94 70%,#1a2744 100%)',
-        bodyBg: 'radial-gradient(ellipse at top,#131720 0%,#0b0d12 100%)'
-    },
-    grafito: {
-        '--nayarit-vino':        '#8b9ea8',
-        '--nayarit-vino-light':  '#a8bcc6',
-        '--nayarit-verde':       '#6b7f88',
-        '--nayarit-verde-light': '#8fa4ae',
-        '--nayarit-rojo':        '#9eb0b9',
-        '--nayarit-amarillo':    '#7a8f98',
-        '--bg-primary':          '#0e0e0e',
-        '--bg-secondary':        '#1a1a1a',
-        '--bg-card':             '#141414',
-        '--border-color':        '#2a2a2a',
-        '--text-primary':        '#e8e8e8',
-        '--text-secondary':      '#9a9a9a',
-        '--shadow':              'rgba(139,158,168,0.3)',
-        '--glow':                'rgba(139,158,168,0.2)',
-        '--gradient-primary':    'linear-gradient(135deg,#1c1c1c 0%,#252525 40%,#2e2e2e 100%)',
-        '--gradient-secondary':  'linear-gradient(135deg,#111111 0%,#1e1e1e 50%,#282828 100%)',
-        '--gradient-accent':     'linear-gradient(90deg,#222222,#2e2e2e,#3a3a3a,#2e2e2e,#222222)',
-        '--gradient-holographic':'linear-gradient(45deg,#1a1a1a 0%,#2e2e2e 40%,#3d3d3d 70%,#1a1a1a 100%)',
-        bodyBg: 'radial-gradient(ellipse at top,#1a1a1a 0%,#0e0e0e 100%)'
-    },
-    // ── MODERNOS LLAMATIVOS ─────────────────────────────────────────
-    retro80: {
-        '--nayarit-vino':        '#00FF41',
-        '--nayarit-vino-light':  '#39FF14',
-        '--nayarit-verde':       '#00CC33',
-        '--nayarit-verde-light': '#00FF41',
-        '--nayarit-rojo':        '#00FF41',
-        '--nayarit-amarillo':    '#00FF41',
-        '--bg-primary':          '#000000',
-        '--bg-secondary':        '#001200',
-        '--bg-card':             '#000000',
-        '--border-color':        '#00FF41',
-        '--text-primary':        '#00FF41',
-        '--text-secondary':      '#00AA2A',
-        '--shadow':              'rgba(0,255,65,0.6)',
-        '--glow':                'rgba(0,255,65,0.4)',
-        '--gradient-primary':    'linear-gradient(135deg,#003B00 0%,#005500 50%,#003B00 100%)',
-        '--gradient-secondary':  'linear-gradient(135deg,#002200 0%,#004400 50%,#002200 100%)',
-        '--gradient-accent':     'linear-gradient(90deg,#003B00,#005500,#00FF41,#005500,#003B00)',
-        '--gradient-holographic':'linear-gradient(45deg,#003B00 0%,#005500 40%,#00FF41 70%,#003B00 100%)',
-        bodyBg: '#000000'
-    },
-    bordo: {
-        '--nayarit-vino':        '#8B1A2E',
-        '--nayarit-vino-light':  '#A52340',
-        '--nayarit-verde':       '#6B1422',
-        '--nayarit-verde-light': '#9E2035',
-        '--nayarit-rojo':        '#C0392B',
-        '--nayarit-amarillo':    '#7a1530',
-        '--bg-primary':          '#0D0308',
-        '--bg-secondary':        '#180610',
-        '--bg-card':             '#120408',
-        '--border-color':        '#3A0A18',
-        '--text-primary':        '#F5E8EC',
-        '--text-secondary':      '#C49AA8',
-        '--shadow':              'rgba(139,26,46,0.45)',
-        '--glow':                'rgba(139,26,46,0.25)',
-        '--gradient-primary':    'linear-gradient(135deg,#2c0a14 0%,#5a1025 50%,#7a1530 100%)',
-        '--gradient-secondary':  'linear-gradient(135deg,#1a0509 0%,#3d0d1a 50%,#5a1025 100%)',
-        '--gradient-accent':     'linear-gradient(90deg,#2c0a14,#5a1025,#7a1530,#5a1025,#2c0a14)',
-        '--gradient-holographic':'linear-gradient(45deg,#2c0a14 0%,#5a1025 40%,#8B1A2E 70%,#2c0a14 100%)',
-        bodyBg: 'radial-gradient(ellipse at top,#180610 0%,#0D0308 100%)'
-    },
-    zafiro: {
-        '--nayarit-vino':        '#1E5FA8',
-        '--nayarit-vino-light':  '#2A78CC',
-        '--nayarit-verde':       '#154E8C',
-        '--nayarit-verde-light': '#2266B0',
-        '--nayarit-rojo':        '#1A5298',
-        '--nayarit-amarillo':    '#1a3f6f',
-        '--bg-primary':          '#02080F',
-        '--bg-secondary':        '#060F1C',
-        '--bg-card':             '#040B16',
-        '--border-color':        '#0C1E38',
-        '--text-primary':        '#E8F0FA',
-        '--text-secondary':      '#7AAAD8',
-        '--shadow':              'rgba(30,95,168,0.45)',
-        '--glow':                'rgba(30,95,168,0.25)',
-        '--gradient-primary':    'linear-gradient(135deg,#0a1628 0%,#0f2545 50%,#1a3f6f 100%)',
-        '--gradient-secondary':  'linear-gradient(135deg,#060e1e 0%,#0d1f3c 50%,#153360 100%)',
-        '--gradient-accent':     'linear-gradient(90deg,#0a1628,#0f2545,#1a3f6f,#0f2545,#0a1628)',
-        '--gradient-holographic':'linear-gradient(45deg,#0a1628 0%,#1a3f6f 40%,#1E5FA8 70%,#0a1628 100%)',
-        bodyBg: 'radial-gradient(ellipse at top,#060F1C 0%,#02080F 100%)'
-    },
-    bronce: {
-        '--nayarit-vino':        '#8C6D1F',
-        '--nayarit-vino-light':  '#B08A28',
-        '--nayarit-verde':       '#6B5218',
-        '--nayarit-verde-light': '#9A7822',
-        '--nayarit-rojo':        '#A07820',
-        '--nayarit-amarillo':    '#7a5c00',
-        '--bg-primary':          '#0D0A00',
-        '--bg-secondary':        '#1A1400',
-        '--bg-card':             '#130F00',
-        '--border-color':        '#352800',
-        '--text-primary':        '#FAF3E0',
-        '--text-secondary':      '#C8A84B',
-        '--shadow':              'rgba(140,109,31,0.45)',
-        '--glow':                'rgba(140,109,31,0.25)',
-        '--gradient-primary':    'linear-gradient(135deg,#1a1200 0%,#3d2c00 50%,#6b4d00 100%)',
-        '--gradient-secondary':  'linear-gradient(135deg,#0f0b00 0%,#2a2000 50%,#4a3600 100%)',
-        '--gradient-accent':     'linear-gradient(90deg,#1a1200,#3d2c00,#6b4d00,#3d2c00,#1a1200)',
-        '--gradient-holographic':'linear-gradient(45deg,#1a1200 0%,#4a3600 40%,#8C6D1F 70%,#1a1200 100%)',
-        bodyBg: 'radial-gradient(ellipse at top,#1A1400 0%,#0D0A00 100%)'
-    }
-};
-
-function aplicarTema(nombre) {
-    const t = TEMAS[nombre];
-    if (!t) return;
-    const root = document.documentElement;
-    Object.entries(t).forEach(([k,v]) => { if(k !== 'bodyBg') root.style.setProperty(k, v); });
-    document.body.style.background = t.bodyBg;
-    document.body.style.backgroundAttachment = 'fixed';
-    // Marcar círculo activo
-    document.querySelectorAll('#themeSwitcher button').forEach(b => b.classList.remove('activo'));
-    const dot = document.getElementById('dot-' + nombre);
-    if(dot) dot.classList.add('activo');
-    // Modo retro 80s: fuente monospace + scanlines + glow en texto
-    const esRetro = nombre === 'retro80';
-    document.body.classList.toggle('retro-mode', esRetro);
-    let retroStyle = document.getElementById('retro-style');
-    if (esRetro) {
-        if (!retroStyle) {
-            retroStyle = document.createElement('style');
-            retroStyle.id = 'retro-style';
-            retroStyle.textContent = `
-                .retro-mode, .retro-mode * {
-                    font-family: 'Courier New', Courier, monospace !important;
-                    letter-spacing: 0.04em;
-                }
-                .retro-mode body::after {
-                    content: '';
-                    position: fixed;
-                    top: 0; left: 0; right: 0; bottom: 0;
-                    background: repeating-linear-gradient(
-                        0deg,
-                        rgba(0,0,0,0.18) 0px,
-                        rgba(0,0,0,0.18) 1px,
-                        transparent 1px,
-                        transparent 3px
-                    );
-                    pointer-events: none;
-                    z-index: 9999;
-                }
-                .retro-mode .card,
-                .retro-mode .resultado-final,
-                .retro-mode input,
-                .retro-mode select {
-                    border-color: #00FF41 !important;
-                    box-shadow: 0 0 8px rgba(0,255,65,0.4), inset 0 0 4px rgba(0,255,65,0.05) !important;
-                }
-                .retro-mode h1, .retro-mode h2, .retro-mode h3,
-                .retro-mode .monto, .retro-mode .card-title {
-                    text-shadow: 0 0 10px rgba(0,255,65,0.8), 0 0 20px rgba(0,255,65,0.4) !important;
-                }
-                .retro-mode .version-badge, .retro-mode .inpc-update-badge {
-                    border-color: #00FF41 !important;
-                    color: #00FF41 !important;
-                    text-shadow: 0 0 8px rgba(0,255,65,0.8) !important;
-                    background: rgba(0,255,65,0.08) !important;
-                }
-            `;
-            document.head.appendChild(retroStyle);
-        }
-    } else {
-        if (retroStyle) retroStyle.remove();
-    }
-    localStorage.setItem('isavu_tema', nombre);
-}
-
-// Restaurar tema guardado (si no existe en la lista actual, usar default)
-(function() {
-    const guardado = localStorage.getItem('isavu_tema');
-    const tema = (guardado && TEMAS[guardado]) ? guardado : 'obsidian';
-    aplicarTema(tema);
-})();
-</script>
-
-<!-- Footer derechos de autor -->
-<footer style="
-    text-align: center;
-    padding: 10px 20px;
-    margin-top: 8px;
-    color: rgba(160, 210, 235, 0.35);
-    font-size: 0.72rem;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    letter-spacing: 0.03em;
-    border-top: 1px solid rgba(76, 201, 240, 0.08);
-    position: relative;
-    z-index: 1;
-">
-    &copy; <span id="footerYear"></span> Lic. en Informática César Rodríguez Pérez &mdash; Todos los derechos reservados
-</footer>
-<script>document.getElementById('footerYear').textContent = new Date().getFullYear();</script>
 
 </body>
 </html>
